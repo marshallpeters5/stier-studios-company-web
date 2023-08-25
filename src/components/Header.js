@@ -1,25 +1,59 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
 function Header() {
-  const location = useLocation(); // Get the current location from React Router
+  const location = useLocation();
+  const [navbarOpen, setNavbarOpen] = useState(false);
 
-  const isActive = (path) => {
-    return location.pathname === path ? 'active' : ''; // Compare current path with link path
+  const handleNavbarToggle = () => {
+    setNavbarOpen(!navbarOpen);
   };
 
-  return (
-    <header>
-      <h1>S Tier Studios</h1>
-      <nav>
-        <ul>
-        <Link className={`nav-link ${isActive('/') ? 'active' : ''}`} to="/">Home</Link>
-<Link className={`nav-link ${isActive('/about') ? 'active' : ''}`} to="/about">About Us</Link>
-<Link className={`nav-link ${isActive('/contact') ? 'active' : ''}`} to="/contact">Contact Us</Link>
-<Link className={`nav-link ${isActive('/services') ? 'active' : ''}`} to="/services">Services</Link>
+  const closeNavbar = () => {
+    setNavbarOpen(false);
+  };
 
-        </ul>
-      </nav>
+  const isActive = (path) => location.pathname === path;
+
+  return (
+    <header className="navbar navbar-expand-lg navbar-light bg-light">
+      <div className="container">
+        <Link className="navbar-brand" to="/" onClick={closeNavbar}>
+          S Tier Studios
+        </Link>
+        <button
+          className={`navbar-toggler ${navbarOpen ? 'collapsed' : ''}`}
+          type="button"
+          onClick={handleNavbarToggle}
+          aria-expanded={navbarOpen}
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className={`collapse navbar-collapse ${navbarOpen ? 'show' : ''}`} id="navbarNav">
+          <ul className="navbar-nav">
+            <li className={`nav-item ${isActive('/') ? 'active' : ''}`}>
+              <Link className="nav-link" to="/" onClick={closeNavbar}>
+                Home
+              </Link>
+            </li>
+            <li className={`nav-item ${isActive('/about') ? 'active' : ''}`}>
+              <Link className="nav-link" to="/about" onClick={closeNavbar}>
+                About Us
+              </Link>
+            </li>
+            <li className={`nav-item ${isActive('/contact') ? 'active' : ''}`}>
+              <Link className="nav-link" to="/contact" onClick={closeNavbar}>
+                Contact Us
+              </Link>
+            </li>
+            <li className={`nav-item ${isActive('/services') ? 'active' : ''}`}>
+              <Link className="nav-link" to="/services" onClick={closeNavbar}>
+                Services
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
   );
 }
