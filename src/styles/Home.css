@@ -1,0 +1,36 @@
+  .hometext-left {
+    flex-direction: row;
+  }
+  
+  .hometext-right {
+    flex-direction: row-reverse;
+  }
+
+  .hometext-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+
+    @media (max-width: 992px) {
+        display: block;
+      }
+  }
+
+  .hometext-container-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-left: 200px; 
+    margin-right: 200px;
+  
+    @media (max-width: 992px) {
+      margin: 20px;
+    }
+  }
+  
+  .hometext {
+    margin-top: 20px;
+  }

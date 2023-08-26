@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 function Services() {
   const services = [
@@ -8,13 +8,13 @@ function Services() {
     "UI/UX Design",
     "Software Consulting",
     "Quality Assurance",
-    "Maintenance and Support"
+    "Maintenance and Support",
   ];
 
   return (
     <div>
-      <h2 className="m-4">What We Offer</h2>
-      <ul style={{ listStyle: 'none', padding: 0 }}>
+      <h2 className="m-4 heading">What We Offer</h2>
+      <ul style={{ listStyle: "none", padding: 0 }}>
         {services.map((service, index) => (
           <li key={index}>{service}</li>
         ))}

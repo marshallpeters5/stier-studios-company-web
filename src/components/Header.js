@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import React, { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 
 function Header() {
   const location = useLocation();
@@ -22,26 +22,29 @@ function Header() {
           S Tier Studios
         </Link>
         <button
-          className={`navbar-toggler ${navbarOpen ? 'collapsed' : ''}`}
+          className={`navbar-toggler ${navbarOpen ? "collapsed" : ""}`}
           type="button"
           onClick={handleNavbarToggle}
           aria-expanded={navbarOpen}
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className={`collapse navbar-collapse ${navbarOpen ? 'show' : ''}`} id="navbarNav">
+        <div
+          className={`collapse navbar-collapse ${navbarOpen ? "show" : ""}`}
+          id="navbarNav"
+        >
           <ul className="navbar-nav">
-            <li className={`nav-item ${isActive('/') ? 'active' : ''}`}>
+            <li className={`nav-item ${isActive("/") ? "active" : ""}`}>
               <Link className="nav-link" to="/" onClick={closeNavbar}>
                 Home
               </Link>
             </li>
-            <li className={`nav-item ${isActive('/about') ? 'active' : ''}`}>
+            <li className={`nav-item ${isActive("/about") ? "active" : ""}`}>
               <Link className="nav-link" to="/about" onClick={closeNavbar}>
                 About Us
               </Link>
             </li>
-            <li className={`nav-item ${isActive('/services') ? 'active' : ''}`}>
+            <li className={`nav-item ${isActive("/services") ? "active" : ""}`}>
               <Link className="nav-link" to="/services" onClick={closeNavbar}>
                 Services
               </Link>

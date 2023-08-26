@@ -6,4 +6,9 @@
 
 .footer {
   margin-top: 20px;
+  margin: 10px;
+}
+
+.footer-icon {
+  margin-right: 25px;
 }
