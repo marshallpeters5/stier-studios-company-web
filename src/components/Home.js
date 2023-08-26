@@ -2,9 +2,39 @@ import React from 'react';
 
 function Home() {
   return (
-    <div>
-      <h2>Welcome</h2>
-      {/* Add content */}
+    <div className="container">
+      <h2 className="m-4">Welcome to S Tier Studios</h2>
+      
+      <div className="hometext-container">
+        <img src="/images/devops.png" alt="Dev Ops diagram" className="img-fluid" style={{ borderRadius: '15px', marginTop: "20px", margin: '10px', width: '400px', height: 'auto', alignItems: 'center' }}/>
+        <p className="m-4 hometext">
+          At S Tier Studios, we are committed to excellence in software development, and that's why we've embraced the
+          DevOps methodology. DevOps isn't just a process; it's a culture that bridges the gap between development and
+          operations teams. By automating processes, ensuring continuous integration and delivery, and emphasizing
+          collaboration, we deliver software faster and with higher quality, empowering our clients to succeed.
+        </p>
+      </div>
+      
+      <div className="hometext-container">
+        <img src="/images/scrum.png" alt="S Tier Studios Scrum" className="img-fluid" style={{ borderRadius: '15px', marginTop: "20px", margin: '10px', width: '400px', height: 'auto', alignItems: 'center' }}/>
+        <p className="m-4 hometext">
+          Our development process is further enhanced by Scrum, an Agile framework that empowers us to deliver value to
+          our clients iteratively and efficiently. Scrum encourages close collaboration, adaptability, and continuous
+          improvement. With well-defined roles, ceremonies, and artifacts, we ensure transparent communication, efficient
+          task management, and quick response to changes. By embracing Scrum, we bring your ideas to life in a way that's
+          flexible, collaborative, and tailored to your evolving needs.
+        </p>
+      </div>
+
+      <div className="hometext-container">
+        <img src="/images/coder.png" alt="S Tier Studios Ideals" className="img-fluid" style={{ borderRadius: '15px', marginTop: "20px", margin: '10px', width: '300px', height: 'auto', alignItems: 'center' }}/>
+        <p className="m-4 hometext">
+          We believe in the power of ideals, hard work, and ingenuity. Our team is driven by the pursuit of excellence,
+          and we approach every project with dedication and innovation. With a focus on creativity and problem-solving,
+          we turn challenges into opportunities, delivering results that exceed expectations. Join us on a journey where
+          passion meets purpose, and together, we'll transform your ideas into remarkable solutions.
+        </p>
+      </div>
     </div>
   );
 }

@@ -41,11 +41,6 @@ function Header() {
                 About Us
               </Link>
             </li>
-            <li className={`nav-item ${isActive('/contact') ? 'active' : ''}`}>
-              <Link className="nav-link" to="/contact" onClick={closeNavbar}>
-                Contact Us
-              </Link>
-            </li>
             <li className={`nav-item ${isActive('/services') ? 'active' : ''}`}>
               <Link className="nav-link" to="/services" onClick={closeNavbar}>
                 Services
