@@ -1,4 +1,4 @@
-  .hometext-left {
+ .hometext-left {
     flex-direction: row;
   }
   
@@ -11,26 +11,35 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 20px 0;
+    margin-left: 200px; 
+    margin-right: 200px;
 
-    @media (max-width: 992px) {
-        display: block;
+    @media (max-width: 1200px) {
+        display: block; 
+        margin-left: 20px;
+        margin-right: 20px;
       }
   }
-
-  .hometext-container-bottom {
+ 
+  .hometext-bottom {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     text-align: center;
     margin-left: 200px; 
     margin-right: 200px;
   
-    @media (max-width: 992px) {
-      margin: 20px;
-    }
+
+    @media (max-width: 1200px) {
+        margin-left: 20px;
+        margin-right: 20px;
+      }
   }
-  
-  .hometext {
-    margin-top: 20px;
+
+  #promise {
+    margin-top: 40px;
   }
+/*
+.hometext {
+    text-align: left;
+} removed for now */

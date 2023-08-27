@@ -49,6 +49,31 @@ function Header() {
                 Services
               </Link>
             </li>
+            </ul>
+            <ul className="navbar-nav ml-auto">
+            <li className="nav-item d-lg-none">
+            <hr class="hr hr-blurry" />
+            </li>
+            {/* Phone Number Link */}
+            <li className="nav-item">
+              <a
+                className="nav-link d-lg-none" // Only visible on mobile (lg screen size and smaller)
+                href="tel:1234567890"
+                onClick={closeNavbar}
+              >
+                <i className="bi bi-telephone-fill"></i>Phone
+              </a>
+            </li>
+            {/* Email Link */}
+            <li className="nav-item">
+              <a
+                className="nav-link d-lg-none" // Only visible on mobile (lg screen size and smaller)
+                href="mailto:info@example.com"
+                onClick={closeNavbar}
+              >
+                <i className="bi bi-envelope-fill"></i>Email
+              </a>
+            </li>
           </ul>
         </div>
       </div>

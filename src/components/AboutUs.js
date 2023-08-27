@@ -12,7 +12,7 @@ function AboutUs() {
         exceptional results. Get to know some of the key members who bring
         creativity, expertise, and innovation to every project.
       </p>
-      <div className="row">
+      <div className="row align-center">
         {employeesData.map((employee, index) => (
           <div className="col-md-6 mb-4" key={index}>
             <Card>
