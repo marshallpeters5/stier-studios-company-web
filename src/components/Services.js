@@ -42,7 +42,7 @@ function Services() {
 
   return (
     <div>
-      <h2 className="m-4 heading" id="offer">What We Offer</h2>
+      <h1 className="m-4 heading" id="offer">What We Offer</h1>
       <ul style={{ listStyle: "none", padding: 0 }}>
         {services.map((service, index) => (
           <li key={index}>
@@ -51,6 +51,7 @@ function Services() {
           </li>
         ))}
       </ul>
+      <sub>* Please contact us to discuss pricing options. Pricing will vary and is dependent on the individual agreement between the customer and S Tier Studios.</sub>
     </div>
   );
 }
