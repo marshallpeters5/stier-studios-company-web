@@ -58,8 +58,8 @@ function Services() {
         {services.map((service, index) => (
           <li key={index}>
             <div className="service">
-              <FontAwesomeIcon icon={service.icon} className="service-icon" />
               <h4 className="service-title">{service.title}</h4>
+              <FontAwesomeIcon icon={service.icon} className="service-icon m-2" />
               <p className="service-description">{service.description}</p>
             </div>
           </li>
