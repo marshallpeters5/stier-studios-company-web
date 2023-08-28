@@ -4,7 +4,7 @@ import "../styles/Home.css";
 function Home() {
   return (
     <div className="container">
-      <h1 className="m-4 heading">Welcome to the Studio</h1>
+      <h1 className="m-4 heading">Welcome to the Workshop</h1>
 
       <div className="hometext-container">
         <img
