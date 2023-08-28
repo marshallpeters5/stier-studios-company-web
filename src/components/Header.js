@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 function Header() {
-
   const [navbarOpen, setNavbarOpen] = useState(false);
   const [copied, setCopied] = useState(false);
 
@@ -70,18 +69,52 @@ function Header() {
             <li>
               <p className="d-lg-none">Contact Us</p>
             </li>
+            {/* Phone Number Link */}
             <li className="nav-item">
-              <p
-                className={`nav-link d-lg-none ${copied ? "copied" : ""} text-center`}
-                onClick={(e) => {
-                  e.preventDefault();
-                  copyEmailToClipboard();
-                }}
+              <a
+                className="nav-link d-lg-none" // Only visible on mobile (lg screen size and smaller)
+                href="tel:5132556136"
+                onClick={closeNavbar}
               >
-                <i className="bi bi-envelope-fill text-center"></i>info@stierstudios.com
-                {copied && <span className="copied-message m-4">Copied to clipboard!</span>}
-              </p>
+                <i className="bi bi-telephone-fill"></i>+1 513-255-6136
+              </a>
             </li>
+            <div
+              className="nav-link d-lg-none text-center"
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+              }}
+            >
+              <li className="nav-item">
+                <p
+                  className={`nav-link d-lg-none ${
+                    copied ? "copied" : ""
+                  } text-center `}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    copyEmailToClipboard();
+                  }}
+                >
+                  <i className="bi bi-envelope-fill text-center"></i>
+                  info@stierstudios.com
+                  {copied && (
+                    <span
+                      className="copied-message m-1"
+                      style={{
+                        display: "flex",
+                        flexDirection: "column",
+                        alignItems: "center",
+                        fontStyle: "italic",
+                      }}
+                    >
+                      Copied to clipboard!
+                    </span>
+                  )}
+                </p>
+              </li>
+            </div>
           </ul>
         </div>
       </div>
