@@ -8,12 +8,12 @@ function Footer() {
         <div className="container text-center">
           <div className="footer-links">
             <a
-              href="mailto:your-email@example.com"
+              href="mailto:info@stierstudios.com"
               className="footer-icon footer-icon-spaced"
             >
-              <img src="/images/mail.svg" alt="Email" />
+              <img src="/images/mail.svg" alt="Business Email" />
             </a>
-            <a href="tel:1234567890" className="footer-icon footer-icon-spaced">
+            <a href="tel:5132556136" className="footer-icon footer-icon-spaced">
               <img src="/images/phone.svg" alt="Phone" />
             </a>
             <a

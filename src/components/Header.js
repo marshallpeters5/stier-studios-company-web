@@ -54,24 +54,27 @@ function Header() {
             <li className="nav-item d-lg-none">
             <hr class="hr hr-blurry" />
             </li>
+            <li>
+              <p className="d-lg-none">Contact Us</p>
+            </li>
             {/* Phone Number Link */}
             <li className="nav-item">
               <a
                 className="nav-link d-lg-none" // Only visible on mobile (lg screen size and smaller)
-                href="tel:1234567890"
+                href="tel:5132556136"
                 onClick={closeNavbar}
               >
-                <i className="bi bi-telephone-fill"></i>Phone
+                <i className="bi bi-telephone-fill"></i>+1 513 255 6136
               </a>
             </li>
             {/* Email Link */}
             <li className="nav-item">
               <a
                 className="nav-link d-lg-none" // Only visible on mobile (lg screen size and smaller)
-                href="mailto:info@example.com"
+                href="mailto:info@stierstudios.com"
                 onClick={closeNavbar}
               >
-                <i className="bi bi-envelope-fill"></i>Email
+                <i className="bi bi-envelope-fill"></i>info@stierstudios.com
               </a>
             </li>
           </ul>
