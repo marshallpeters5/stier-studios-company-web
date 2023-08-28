@@ -1,7 +1,15 @@
 import React from "react";
 import "../styles/Services.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCogs, faCode, faMobileAlt, faPalette, faHandsHelping, faCheckDouble, faTools } from "@fortawesome/free-solid-svg-icons";
+import {
+  faCogs,
+  faCode,
+  faMobileAlt,
+  faPalette,
+  faHandsHelping,
+  faCheckDouble,
+  faTools,
+} from "@fortawesome/free-solid-svg-icons";
 
 function Services() {
   const services = [
@@ -58,16 +66,20 @@ function Services() {
         {services.map((service, index) => (
           <li key={index}>
             <div className="service">
+              <FontAwesomeIcon
+                icon={service.icon}
+                className="service-icon m-2"
+              />
               <h4 className="service-title">{service.title}</h4>
-              <FontAwesomeIcon icon={service.icon} className="service-icon m-2" />
               <p className="service-description">{service.description}</p>
             </div>
           </li>
         ))}
       </ul>
       <sub>
-        * Please contact us to discuss pricing options. Pricing will vary and
-        is dependent on the individual agreement between the customer and S Tier Studios.
+        * Please contact us to discuss pricing options. Pricing will vary and is
+        dependent on the individual agreement between the customer and S Tier
+        Studios.
       </sub>
     </div>
   );
