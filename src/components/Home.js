@@ -56,22 +56,22 @@ function Home() {
           }}
         />
       </div>
-      
-        <img
-          src="/images/coder.png"
-          alt="S Tier Studios Ideals"
-          className="img-fluid"
-          style={{
-            borderRadius: "15px",
-            marginTop: "20px",
-            margin: "10px",
-            width: "300px",
-            height: "auto",
-            alignItems: "center",
-          }}
-        />
-        <h3>Our Business Promise</h3>
-        <div className="hometext-bottom">
+
+      <img
+        src="/images/coder.png"
+        alt="S Tier Studios Ideals"
+        className="img-fluid"
+        style={{
+          borderRadius: "15px",
+          marginTop: "20px",
+          margin: "10px",
+          width: "300px",
+          height: "auto",
+          alignItems: "center",
+        }}
+      />
+      <h3>Our Business Promise</h3>
+      <div className="hometext-bottom">
         <p className="m-4 hometext">
           We believe in the power of ideals, hard work, and ingenuity. Our team
           is driven by the pursuit of excellence, and we approach every project
@@ -82,7 +82,7 @@ function Home() {
           remarkable solutions.
         </p>
       </div>
-  </div>
+    </div>
   );
 }
 

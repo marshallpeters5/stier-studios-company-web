@@ -1,30 +1,30 @@
 #offer {
-    padding-bottom: 20px;
-  }
+  padding-bottom: 20px;
+}
 
 .service-title {
-    margin-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.service-description {
+  margin-bottom: 2.5rem;
+  margin-left: 35%;
+  margin-right: 35%;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 800px) {
+  .service-description {
+    margin-left: 2rem;
+    margin-right: 2rem;
   }
-  
+}
+
+/* Media query for mobile devices */
+@media (max-width: 2000px) {
   .service-description {
     margin-bottom: 2.5rem;
-    margin-left: 35%;
-    margin-right: 35%;
+    margin-left: 25%;
+    margin-right: 25%;
   }
-  
-  /* Media query for mobile devices */
-  @media (max-width: 800px) {
-    .service-description {
-        margin-left: 2rem;
-        margin-right: 2rem;
-    }
-  }
-
-    /* Media query for mobile devices */
-    @media (max-width: 2000px) {
-        .service-description {
-            margin-bottom: 2.5rem;
-            margin-left: 25%;
-            margin-right: 25%;
-          }
-      }
+}
