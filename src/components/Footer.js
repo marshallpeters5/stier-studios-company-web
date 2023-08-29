@@ -17,16 +17,16 @@ function Footer() {
               <img src="/images/phone.svg" alt="Phone" />
             </a>
             <a
-              href="https://www.facebook.com/yourbusinesspage"
-              target="_blank"
+              href="https://www.facebook.com/profile.php?id=61550800319479"
+              target="_https://www.facebook.com/profile.php?id=61550800319479"
               rel="noopener noreferrer"
               className="footer-icon footer-icon-spaced"
             >
               <img src="/images/facebook.svg" alt="Facebook" />
             </a>
             <a
-              href="https://www.linkedin.com/in/your-profile"
-              target="_blank"
+              href="https://www.linkedin.com/company/s-tier-studios/"
+              target="https://www.linkedin.com/company/s-tier-studios/"
               rel="noopener noreferrer"
             >
               <img src="/images/linkedin.svg" alt="LinkedIn" />
