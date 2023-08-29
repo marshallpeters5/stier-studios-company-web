@@ -23,7 +23,7 @@ function Services() {
           </li>
         ))}
       </ul>
-      <sub className="bold-text">
+      <sub className="regular-text">
         * Please contact us to discuss pricing options. Pricing will vary and is
         dependent on the individual agreement between the customer and S Tier
         Studios.

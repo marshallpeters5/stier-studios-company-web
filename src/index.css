@@ -17,15 +17,25 @@ S
 }
 
 .heading {
-  font-size: 48px;
+  font-size: 44px;
 }
 
 .bold-text {
   font-family: 'NowBold', sans-serif;
-  font-weight: bold;
+  font-weight: normal;
 }
 
 .regular-text {
   font-family: 'NowRegular', sans-serif;
+  font-weight: normal;
+}
+
+.black-text {
+  font-family: 'NowBlack', sans-serif;
+  font-weight: normal;
+}
+
+.thin-text {
+  font-family: 'NowThin', sans-serif;
   font-weight: normal;
 }
