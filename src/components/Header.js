@@ -9,18 +9,16 @@ function Header() {
     setNavbarOpen(!navbarOpen);
   };
 
-  const copyEmailToClipboard = () => {
-    const dummyTextArea = document.createElement("textarea");
-    dummyTextArea.value = "info@stierstudios.com";
-    document.body.appendChild(dummyTextArea);
-    dummyTextArea.select();
-    document.execCommand("copy");
-    document.body.removeChild(dummyTextArea);
-
-    setCopied(true);
-    setTimeout(() => {
-      setCopied(false);
-    }, 2000);
+  const copyEmailToClipboard = async () => {
+    try {
+      await navigator.clipboard.writeText("info@stierstudios.com");
+      setCopied(true);
+      setTimeout(() => {
+        setCopied(false);
+      }, 2000);
+    } catch (err) {
+      console.error("Error copying to clipboard:", err);
+    }
   };
 
   const closeNavbar = () => {
