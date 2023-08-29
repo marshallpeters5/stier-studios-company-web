@@ -6,7 +6,7 @@ import servicesData from "../data/servicesData";
 function Services() {
   return (
     <div>
-      <h1 className="m-4 heading" id="offer">
+      <h1 className="m-4 heading bold-text" id="offer">
         What We Offer
       </h1>
       <ul style={{ listStyle: "none", padding: 0 }}>
@@ -17,13 +17,13 @@ function Services() {
                 icon={service.icon}
                 className="service-icon m-2"
               />
-              <h4 className="service-title">{service.title}</h4>
-              <p className="service-description">{service.description}</p>
+              <h4 className="service-title bold-text">{service.title}</h4>
+              <p className="service-description regular-text">{service.description}</p>
             </div>
           </li>
         ))}
       </ul>
-      <sub>
+      <sub className="bold-text">
         * Please contact us to discuss pricing options. Pricing will vary and is
         dependent on the individual agreement between the customer and S Tier
         Studios.

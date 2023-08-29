@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
+import "../styles/Header.css";
 
 function Header() {
   const [navbarOpen, setNavbarOpen] = useState(false);
@@ -29,7 +30,7 @@ function Header() {
     <header className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container">
         <Link className="navbar-brand" to="/" onClick={closeNavbar}>
-          S Tier Studios
+          <img src="/images/squarelogo.png" alt="S Tier Studios Logo" className="logo" />
         </Link>
         <button
           className={`navbar-toggler ${navbarOpen ? "collapsed" : ""}`}
@@ -44,33 +45,48 @@ function Header() {
           id="navbarNav"
         >
           <ul className="navbar-nav">
-            <li className="nav-item">
-              <Link className="nav-link" to="/" onClick={closeNavbar}>
-                Home
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/about" onClick={closeNavbar}>
-                About Us
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/services" onClick={closeNavbar}>
-                Services
-              </Link>
-            </li>
-          </ul>
+  <li className="nav-item">
+    <NavLink
+      className="nav-link regular-text"
+      activeClassName="bold-text" // Apply this class when link is active
+      to="/"
+      onClick={closeNavbar}
+    >
+      Home
+    </NavLink>
+  </li>
+  <li className="nav-item">
+    <NavLink
+      className="nav-link regular-text"
+      activeClassName="bold-text" // Apply this class when link is active
+      to="/about"
+      onClick={closeNavbar}
+    >
+      About Us
+    </NavLink>
+  </li>
+  <li className="nav-item">
+    <NavLink
+      className="nav-link regular-text"
+      activeClassName="bold-text" // Apply this class when link is active
+      to="/services"
+      onClick={closeNavbar}
+    >
+      Services
+    </NavLink>
+  </li>
+</ul>
           <ul className="navbar-nav ml-auto">
             <li className="nav-item d-lg-none">
               <hr className="hr hr-blurry" />
             </li>
             <li>
-              <p className="d-lg-none">Contact Us</p>
+              <p className="d-lg-none regular-text">Contact Us</p>
             </li>
             {/* Phone Number Link */}
             <li className="nav-item">
               <a
-                className="nav-link d-lg-none" // Only visible on mobile (lg screen size and smaller)
+                className="nav-link d-lg-none regular-text"
                 href="tel:5132556136"
                 onClick={closeNavbar}
               >
@@ -87,7 +103,7 @@ function Header() {
             >
               <li className="nav-item">
                 <p
-                  className={`nav-link d-lg-none ${
+                  className={`nav-link d-lg-none regular-text ${
                     copied ? "copied" : ""
                   } text-center `}
                   onClick={(e) => {

@@ -1,0 +1,80 @@
+/* Now Thin */
+@font-face {
+    font-family: 'NowThin';
+    src: url('./fonts/now.thin.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  /* Now Regular */
+  @font-face {
+    font-family: 'NowRegular';
+    src: url('./fonts/now.regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  /* Now Medium */
+  @font-face {
+    font-family: 'NowMedium';
+    src: url('./fonts/now.medium.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  /* Now Bold */
+  @font-face {
+    font-family: 'NowBold';
+    src: url('./fonts/now.bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  /* Now Black */
+  @font-face {
+    font-family: 'NowBlack';
+    src: url('./fonts/now.black.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  /* Now Alt Thin */
+  @font-face {
+    font-family: 'NowAltThin';
+    src: url('./fonts/now.alt-thin.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  /* Now Alt Regular */
+  @font-face {
+    font-family: 'NowAltRegular';
+    src: url('./fonts/now.alt-regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  /* Now Alt Medium */
+  @font-face {
+    font-family: 'NowAltMedium';
+    src: url('./fonts/now.alt-medium.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  /* Now Alt Bold */
+  @font-face {
+    font-family: 'NowAltBold';
+    src: url('./fonts/now.alt-bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  /* Now Alt Black */
+  @font-face {
+    font-family: 'NowAltBlack';
+    src: url('./fonts/now.alt-black.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  

@@ -4,7 +4,7 @@ import "../styles/Home.css";
 function Home() {
   return (
     <div className="container">
-      <h1 className="m-4 heading">Welcome to the Workshop</h1>
+      <h1 className="m-4 heading bold-text">Welcome to the Workshop</h1>
 
       <div className="hometext-container">
         <img
@@ -20,7 +20,7 @@ function Home() {
             alignItems: "center",
           }}
         />
-        <p className="m-4 hometext-left">
+        <p className="m-4 hometext-left regular-text">
           At S Tier Studios, we are committed to excellence in software
           development, and that's why we've embraced the DevOps methodology.
           DevOps isn't just a process; it's a culture that bridges the gap
@@ -32,7 +32,7 @@ function Home() {
       </div>
 
       <div className="hometext-container">
-        <p className="m-4 hometext-right">
+        <p className="m-4 hometext-right regular-text">
           Our development process is further enhanced by Scrum, an Agile
           framework that empowers us to deliver value to our clients iteratively
           and efficiently. Scrum encourages close collaboration, adaptability,
@@ -58,7 +58,7 @@ function Home() {
       </div>
 
       <img
-        src="/images/coder.png"
+        src="/images/lightmain.png"
         alt="S Tier Studios Ideals"
         className="img-fluid"
         style={{
@@ -72,7 +72,7 @@ function Home() {
       />
       <h3>Our Business Promise</h3>
       <div className="hometext-bottom">
-        <p className="m-4 hometext">
+        <p className="m-4 hometext regular-text">
           We believe in the power of ideals, hard work, and ingenuity. Our team
           is driven by the pursuit of excellence, and we approach every project
           with dedication and innovation. With a focus on creativity and

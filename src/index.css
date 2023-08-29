@@ -19,3 +19,13 @@ S
 .heading {
   font-size: 48px;
 }
+
+.bold-text {
+  font-family: 'NowBold', sans-serif;
+  font-weight: bold;
+}
+
+.regular-text {
+  font-family: 'NowRegular', sans-serif;
+  font-weight: normal;
+}

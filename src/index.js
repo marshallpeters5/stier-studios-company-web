@@ -4,6 +4,7 @@ import "./index.css"; // Import your custom styles
 import "bootstrap/dist/css/bootstrap.css"; // Import Bootstrap styles
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "../src/styles/Header.css"
+import './fonts.css'; 
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 

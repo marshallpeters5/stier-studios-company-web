@@ -5,8 +5,8 @@ import employeesData from "../data/employeesData";
 function AboutUs() {
   return (
     <div className="container">
-      <h1 className="m-4 heading">Meet the Team</h1>
-      <p className="m-4 abouttext">
+      <h1 className="m-4 heading bold-text">Meet the Team</h1>
+      <p className="m-4 abouttext regular-text">
         At S Tier Studios, our team is made up of talented individuals who are
         passionate about software development and dedicated to delivering
         exceptional results. Get to know some of the key members who bring
@@ -29,11 +29,11 @@ function AboutUs() {
                 className="mx-auto"
               />
               <Card.Body>
-                <Card.Title>{employee.name}</Card.Title>
-                <Card.Subtitle className="mb-2 text-muted">
+                <Card.Title className="bold-text">{employee.name}</Card.Title>
+                <Card.Subtitle className="mb-2 text-muted regular-text">
                   {employee.role}
                 </Card.Subtitle>
-                <Card.Text>{employee.description}</Card.Text>
+                <Card.Text className="regular-text">{employee.description}</Card.Text>
               </Card.Body>
             </Card>
           </div>

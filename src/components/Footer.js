@@ -32,7 +32,7 @@ function Footer() {
               <img src="/images/linkedin.svg" alt="LinkedIn" />
             </a>
           </div>
-          <p className="mt-3">
+          <p className="mt-3 regular-text">
             © {new Date().getFullYear()} S Tier Studios. All rights reserved.
           </p>
         </div>
