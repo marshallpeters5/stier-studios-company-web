@@ -7,7 +7,7 @@ function Services() {
   return (
     <div>
       <h1 className="m-4 heading bold-text" id="offer">
-        What We Offer
+        WHAT WE OFFER
       </h1>
       <ul style={{ listStyle: "none", padding: 0 }}>
         {servicesData.map((service, index) => (
@@ -17,7 +17,7 @@ function Services() {
                 icon={service.icon}
                 className="service-icon m-2"
               />
-              <h4 className="service-title bold-text">{service.title}</h4>
+              <h4 className="service-title medium-text">{service.title}</h4>
               <p className="service-description regular-text">{service.description}</p>
             </div>
           </li>

@@ -5,7 +5,7 @@ import employeesData from "../data/employeesData";
 function AboutUs() {
   return (
     <div className="container">
-      <h1 className="m-4 heading bold-text">Meet the Team</h1>
+      <h1 className="m-4 heading bold-text">MEET THE TEAM</h1>
       <p className="m-4 abouttext regular-text">
         At S Tier Studios, our team is made up of talented individuals who are
         passionate about software development and dedicated to delivering

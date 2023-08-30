@@ -4,7 +4,7 @@ import "../styles/Home.css";
 function Home() {
   return (
     <div className="container">
-      <h1 className="m-4 heading bold-text">Welcome to the Workshop</h1>
+      <h1 className="m-4 heading bold-text">WELCOME TO THE WORKSHOP</h1>
 
       <div className="hometext-container">
         <img
@@ -70,7 +70,7 @@ function Home() {
           alignItems: "center",
         }}
       />
-      <h3>Our Business Promise</h3>
+      <h3 className="bold-text">OUR BUSINESS PROMISE</h3>
       <div className="hometext-bottom">
         <p className="m-4 hometext regular-text">
           We believe in the power of ideals, hard work, and ingenuity. Our team
